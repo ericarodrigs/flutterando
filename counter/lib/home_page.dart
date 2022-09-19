@@ -18,17 +18,19 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('A simple counter', style: TextStyle(fontSize: 24),),
       ),
       body: Center(
-        child: GestureDetector(
-          child: Text(
-            'Contador: $counter',
-            style: TextStyle(fontSize: 32),
-          ),
-          onTap: (){
-            setState(() {
-              counter++;
-            });
-          },
+        child: Text(
+          'Contador: $counter',
+          style: const TextStyle(fontSize: 32),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.white,
+        child: const Icon(Icons.add),
+        onPressed: (){
+          setState(() {
+            counter++;
+          });
+        },
       ),
     );
   }
