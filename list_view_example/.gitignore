@@ -208,6 +208,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/dart,flutter,macos,android,windows,linux
-list_view_example/.metadata
-
-list_view_example/linux/
