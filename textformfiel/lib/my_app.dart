@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:textformfiel/home_page.dart';
 import 'package:textformfiel/login_page.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +11,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const LoginPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
+      },
     );
   }
 }
