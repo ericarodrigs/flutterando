@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:textformfiel/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -28,7 +29,7 @@ class _LoginPage extends State<LoginPage> {
                     email = text;
                   },
                   keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       labelText: 'Email', border: OutlineInputBorder()),
                 ),
                 const SizedBox(
@@ -39,7 +40,7 @@ class _LoginPage extends State<LoginPage> {
                     password = text;
                   },
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       labelText: 'Password', border: OutlineInputBorder()),
                 ),
                 const SizedBox(height: 16),
@@ -52,7 +53,9 @@ class _LoginPage extends State<LoginPage> {
                     ),
                     onPressed: () {
                       if (email == 'erica@erica.com' && password == '1234') {
-                        print('Login realizado com sucesso!');
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => const HomePage()),
+                        );
                       } else {
                         print('Login inválido');
                       }
