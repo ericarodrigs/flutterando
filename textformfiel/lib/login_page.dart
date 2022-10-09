@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:textformfiel/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -24,7 +23,11 @@ class _LoginPage extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.network('https://storage.googleapis.com/cms-storage-bucket/d406c736e7c4c57f5f61.png'),
+                Container(
+                    width: 200,
+                    height: 200,
+                    child: Image.asset('assets/images/dash.png')),
+                Container(height: 20,),
                 TextField(
                   onChanged: (text) {
                     email = text;
