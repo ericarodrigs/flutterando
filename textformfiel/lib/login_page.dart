@@ -24,8 +24,9 @@ class _LoginPage extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Image.network('https://storage.googleapis.com/cms-storage-bucket/d406c736e7c4c57f5f61.png'),
                 TextField(
-                  onChanged: (text){
+                  onChanged: (text) {
                     email = text;
                   },
                   keyboardType: TextInputType.emailAddress,
