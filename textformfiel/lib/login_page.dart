@@ -60,8 +60,8 @@ class _LoginPage extends State<LoginPage> {
                             const SizedBox(height: 16),
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.blueGrey,
-                                  onPrimary: Colors.white,
+                                  backgroundColor: Colors.blueGrey,
+                                  foregroundColor: Colors.white,
                                   elevation: 0,
                                   minimumSize: const Size(double.infinity, 30),
                                   textStyle: const TextStyle(fontSize: 18),
