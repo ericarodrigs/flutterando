@@ -7,12 +7,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        backgroundColor: Colors.grey,
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              currentAccountPicture: Image.network(
-                  'https://avatars.githubusercontent.com/u/67494723?v=4'),
+              currentAccountPicture: ClipRRect(
+                borderRadius: BorderRadius.circular(40),
+                child: Image.network(
+                    'https://avatars.githubusercontent.com/u/67494723?v=4'),
+              ),
               currentAccountPictureSize: const Size.square(80),
               accountName: const Text('Érica Rodrigues'),
               accountEmail: const Text('erica@erica.com'),
